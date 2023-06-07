@@ -56,6 +56,9 @@
                 switch (opcao)
                 {
                     case "1": operacao = "Adição"; break;
+                    case "2": operacao = "Subtração"; break;
+
+                    case "4": operacao = "Divisão"; break;
                 }
 
                 string subtitulo = $"Novo calculo de {operacao}";
@@ -73,6 +76,9 @@
                 switch (opcao)
                 {
                     case "1": resultado = primeiroNumero + segundoNumero; break;
+                    case "2": resultado = primeiroNumero - segundoNumero; break;
+
+                    case "4": resultado = primeiroNumero / segundoNumero; break;
                 }
                 #endregion
 
@@ -89,6 +95,8 @@
                 switch (opcao)
                 {
                     case "1": simbolo = "+"; break;
+                    case "2": simbolo = "-"; break;
+                    case "4": simbolo = "/"; break;
                 }
 
                 string descricaoOperacao = $"{primeiroNumero} {simbolo} {segundoNumero} = {resultado}";
