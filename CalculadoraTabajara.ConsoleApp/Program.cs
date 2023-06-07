@@ -45,6 +45,62 @@
 
                 #endregion
 
+                #region Realizar Calculo
+
+                Console.Clear();
+
+                Console.WriteLine("Calculadora Tabajara 1.0\n");
+
+                string operacao = "";
+
+                switch (opcao)
+                {
+                    case "1": operacao = "Adição"; break;
+                }
+
+                string subtitulo = $"Novo calculo de {operacao}";
+
+                Console.WriteLine(subtitulo + "\n");
+
+                Console.Write($"Digite o primeiro número: ");
+                double primeiroNumero = Convert.ToDouble(Console.ReadLine());
+
+                Console.Write($"Digite o segundo número: ");
+                double segundoNumero = Convert.ToDouble(Console.ReadLine());
+
+                double resultado = 0;
+
+                switch (opcao)
+                {
+                    case "1": resultado = primeiroNumero + segundoNumero; break;
+                }
+                #endregion
+
+                #region Mostrar Resultado
+                Console.Clear();
+
+                Console.WriteLine("Calculadora Tabajara 1.0\n");
+
+                Console.WriteLine("Tela de Resultados\n");
+
+                Console.Write($"O resultado da operação de {operacao} é: {resultado}");
+
+                string simbolo = "";
+                switch (opcao)
+                {
+                    case "1": simbolo = "+"; break;
+                }
+
+                string descricaoOperacao = $"{primeiroNumero} {simbolo} {segundoNumero} = {resultado}";
+
+                operacoes.Add(descricaoOperacao);
+
+                Console.WriteLine();
+
+                Console.ReadLine();
+
+                Console.Clear();
+                #endregion
             }
         }
     } 
