@@ -38,7 +38,7 @@
 
                 if (opcao != "1" && opcao != "2" && opcao != "3" && opcao != "4" && opcao != "5")
                 {
-                    Console.WriteLine("Você precisa digitar uma opção válida!");
+                    Console.WriteLine("Você precisa digitar uma opção válida !");
                     Console.ReadLine();
                     continue;
                 }
@@ -81,7 +81,7 @@
                 #region Mostrar Resultado
                 Console.Clear();
 
-                Console.WriteLine("Calculadora Tabajara 1.0\n");
+                Console.WriteLine("Calculadora Tabajara 1.0 \n");
 
                 Console.WriteLine("Tela de Resultados\n");
 
