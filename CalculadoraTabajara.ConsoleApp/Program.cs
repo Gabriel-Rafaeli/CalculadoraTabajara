@@ -73,6 +73,8 @@
                 switch (opcao)
                 {
                     case "1": resultado = primeiroNumero + segundoNumero; break;
+
+                    case "3": resultado = primeiroNumero * segundoNumero; break;
                 }
                 #endregion
 
@@ -89,6 +91,9 @@
                 switch (opcao)
                 {
                     case "1": simbolo = "+"; break;
+
+                    case "3": simbolo = "*"; break;
+
                 }
 
                 string descricaoOperacao = $"{primeiroNumero} {simbolo} {segundoNumero} = {resultado}";
