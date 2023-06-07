@@ -56,6 +56,9 @@
                 switch (opcao)
                 {
                     case "1": operacao = "Adição"; break;
+
+                    case "3": operacao = "Multiplicação"; break;
+
                 }
 
                 string subtitulo = $"Novo calculo de {operacao}";
