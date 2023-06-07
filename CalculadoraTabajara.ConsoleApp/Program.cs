@@ -38,7 +38,7 @@
 
                 if (opcao != "1" && opcao != "2" && opcao != "3" && opcao != "4" && opcao != "5")
                 {
-                    Console.WriteLine("Você precisa digitar uma opção válida!");
+                    Console.WriteLine("Você precisa digitar uma opção válida !");
                     Console.ReadLine();
                     continue;
                 }
@@ -57,8 +57,11 @@
                 {
                     case "1": operacao = "Adição"; break;
                     case "2": operacao = "Subtração"; break;
-
+                    case "3": operacao = "Multiplicação"; break;
                     case "4": operacao = "Divisão"; break;
+
+                    
+
                 }
 
                 string subtitulo = $"Novo calculo de {operacao}";
@@ -77,7 +80,7 @@
                 {
                     case "1": resultado = primeiroNumero + segundoNumero; break;
                     case "2": resultado = primeiroNumero - segundoNumero; break;
-
+                    case "3": resultado = primeiroNumero * segundoNumero; break;
                     case "4": resultado = primeiroNumero / segundoNumero; break;
                 }
                 #endregion
@@ -85,7 +88,7 @@
                 #region Mostrar Resultado
                 Console.Clear();
 
-                Console.WriteLine("Calculadora Tabajara 1.0\n");
+                Console.WriteLine("Calculadora Tabajara 1.0 \n");
 
                 Console.WriteLine("Tela de Resultados\n");
 
@@ -96,6 +99,7 @@
                 {
                     case "1": simbolo = "+"; break;
                     case "2": simbolo = "-"; break;
+                    case "3": simbolo = "*"; break;             
                     case "4": simbolo = "/"; break;
                 }
 
